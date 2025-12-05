@@ -30,7 +30,7 @@ def forward(x):
 
 ### 方法对比
 
-1. BatchNorm (BN)
+1. BatchNorm (BN): 训练、测试不一致
 2. LayerNorm (LN)
 3. InstanceNorm (IN)
 4. GroupNorm (GN)
