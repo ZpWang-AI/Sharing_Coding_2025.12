@@ -61,4 +61,4 @@ def forward(x):
 ![4](figs/4.png)
 
 
-[代码 Demo](Demo.ipynb)
+[代码 Demo](Demo.py)

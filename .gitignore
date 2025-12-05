@@ -37,4 +37,5 @@ local/
 !/VERSION
 
 !/src
-!/Demo.ipynb
+!/figs
+!/demo.py
