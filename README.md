@@ -30,7 +30,7 @@ def forward(x):
 
 ### 方法对比
 
-1. BatchNorm (BN): 训练、测试不一致
+1. BatchNorm (BN): 训练推理不一致，训练时得到数据集上的均值方差应用于推理
 2. LayerNorm (LN)
 3. InstanceNorm (IN)
 4. GroupNorm (GN)
@@ -49,11 +49,11 @@ def forward(x):
 
 ### 架构方式
 
-1. Post-Norm
+1. Post-Norm (a)
 * $y=norm(M(x)+x)$
 * 经典设计，极限性能可能更优
 
-2. Pre-Norm 
+2. Pre-Norm (b)
 * $y=M(norm(x))+x$
 * 现代 LLM 主流，更加稳定，易加深模型
 
@@ -61,4 +61,4 @@ def forward(x):
 ![4](figs/4.png)
 
 
-[代码 Demo](Demo.py)
+[代码 Demo](demo.py)
