@@ -37,4 +37,4 @@ local/
 !/VERSION
 
 !/src
-
+!/Demo.ipynb
