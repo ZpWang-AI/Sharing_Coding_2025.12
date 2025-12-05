@@ -41,7 +41,7 @@ def forward(x):
 
 5. RMSNorm (Root Mean Square Norm)
 
-* $\hat{X} = \frac{X}{\sqrt{\bar{x^2}+\epsilon}}$
+* $\hat{X} = \frac{X}{\sqrt{\frac{1}{n}\sum(x^2)+\epsilon}}$
 * $Y=\gamma \hat{X}$
 
 * 优点：计算高效，内存消耗少。被一些研究表明是LayerNorm的有效替代品
